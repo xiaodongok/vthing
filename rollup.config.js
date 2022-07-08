@@ -4,7 +4,7 @@ export default {
   input: "./core/index.ts",
   plugins: [typescript()],
   output: {
-    file: "dist/vthing.bundle.js",
+    file: "dist/index.js",
     format: 'cjs',
     sourcemap: true
   }

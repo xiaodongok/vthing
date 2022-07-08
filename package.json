@@ -2,6 +2,10 @@
 	"name": "vthing",
 	"version": "0.0.0",
 	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xiaodongok/vthing.git"
+	},
 	"scripts": {
 		"build": "rollup --config"
 	},

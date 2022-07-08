@@ -1,0 +1,13 @@
+{
+  "name": "vthing",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaodongok/vthing.git"
+  },
+  "main": "index.js",
+  "keywords": ["vthing"],
+  "author": "xiaodongok",
+  "license": "ISC"
+}
