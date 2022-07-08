@@ -1,2 +1,2 @@
-export {vInputNumber} from "./src/input-number";
+export {vInputNumber} from "./src/input-number/index";
 

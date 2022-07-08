@@ -3,7 +3,7 @@ import {
   toNumber,
 } from '@vue/shared'
 
-function onCompositionStart(e: Event) {
+function onCompositionStart(e:Event) {
   (e.target as any).composing = true
 }
 
