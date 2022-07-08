@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import {inputNumber} from "../../core";
+import {vInputNumber} from "../../core";
 
 const app = createApp(App)
-app.directive("input-num",inputNumber)
+app.directive("input-number",vInputNumber)
 app.mount('#app')
-

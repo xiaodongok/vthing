@@ -1,0 +1,32 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@vue/runtime-core': ^3.2.37
+
+devDependencies:
+  '@vue/runtime-core': registry.npmmirror.com/@vue/runtime-core/3.2.37
+
+packages:
+
+  registry.npmmirror.com/@vue/reactivity/3.2.37:
+    resolution: {integrity: sha512-/7WRafBOshOc6m3F7plwzPeCu/RCVv9uMpOwa/5PiY1Zz+WLVRWiy0MYKwmg19KBdGtFWsmZ4cD+LOdVPcs52A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.2.37.tgz}
+    name: '@vue/reactivity'
+    version: 3.2.37
+    dependencies:
+      '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.37
+    dev: true
+
+  registry.npmmirror.com/@vue/runtime-core/3.2.37:
+    resolution: {integrity: sha512-JPcd9kFyEdXLl/i0ClS7lwgcs0QpUAWj+SKX2ZC3ANKi1U4DOtiEr6cRqFXsPwY5u1L9fAjkinIdB8Rz3FoYNQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.2.37.tgz}
+    name: '@vue/runtime-core'
+    version: 3.2.37
+    dependencies:
+      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.2.37
+      '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.37
+    dev: true
+
+  registry.npmmirror.com/@vue/shared/3.2.37:
+    resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.37.tgz}
+    name: '@vue/shared'
+    version: 3.2.37
+    dev: true

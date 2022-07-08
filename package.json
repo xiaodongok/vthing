@@ -1,0 +1,6 @@
+{
+	"devDependencies": {
+		"@vue/runtime-core": "^3.2.37",
+		"@vue/shared": "^3.2.37"
+	}
+}
