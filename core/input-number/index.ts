@@ -1,17 +1,12 @@
-import type {ObjectDirective, VNode} from "@vue/runtime-core"
-
-interface IVnode extends VNode {
-  inputLocking: boolean
-}
-
-type InputElement = HTMLInputElement | HTMLTextAreaElement
+import type {ObjectDirective} from "@vue/runtime-core"
+import type {IVnode} from "../../shared/input"
+import {getInputElement} from "../../shared/input";
 
 export const inputNumber: ObjectDirective<HTMLInputElement | HTMLTextAreaElement> = {
   created(el, binding, vnode) {
     const iVnode = (vnode as IVnode)
-    let input = vnode.type === 'input' ? el : el.children.item(0) as InputElement;
-    if (input === null || input.tagName !== "INPUT") {
-      console.error("请在输入框中绑定")
+    let input = getInputElement(el,vnode)
+    if (!input) {
       return;
     }
     input.addEventListener('compositionstart', () => {
@@ -22,15 +17,14 @@ export const inputNumber: ObjectDirective<HTMLInputElement | HTMLTextAreaElement
       input?.dispatchEvent(new Event('input'))
     })
     input.addEventListener("input", () => {
-      console.log(input.value)
       if (iVnode.inputLocking || !input) {
         return;
       }
       let oldValue = input.value;
       let newValue = input.value;
 
-      newValue = newValue.replace(/\D/g, '')
-      if(+newValue!==+oldValue){
+      newValue = newValue.replace(/[^0-9]/g, '')
+      if(newValue!==oldValue){
         input.value = newValue;
         input.dispatchEvent(new Event("input"))
       }

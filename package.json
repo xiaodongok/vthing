@@ -1,7 +1,10 @@
 {
 	"name": "vthing",
-	"version": "0.0.0",
+	"version": "0.0.3",
 	"description": "",
+	"keywords": ["vthing"],
+	"author": "xiaodongok",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/xiaodongok/vthing.git"
